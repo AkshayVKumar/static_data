@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample1</title>
+    <link rel="stylesheet" href="{% static 'CSS/sam.css' %}">
+</head>
+<body>
+    <h1>Hello {{data}}</h1>
+    <a href="{% url 'page2' %}">move_to_sample2</a>
+    <br/>
+    <a href="{% url 'myapp:page3' %}">move_to_sample3</a>
+    <img src="{% static 'images/img.png' %}" alt="mage not displayed">
+    
+</body>
+</html>
